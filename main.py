@@ -9,8 +9,6 @@ try:
 except:
     import json
 
-reload(sys)
-sys.setdefaultencoding('utf8')    
 
 def save_file(path, data):
     f = file(path, 'w')
@@ -81,6 +79,7 @@ if __name__ == '__main__':
     print ' \n Start downloading ... '
     filter = [
         'Tools/',
+        u'吾爱破解论坛精华集/',
     ]
     print ' You want to download these dir: '
     for f in filter:
